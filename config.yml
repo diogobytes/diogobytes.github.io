@@ -1,0 +1,113 @@
+languageCode: en-us
+baseURL: ""
+title: Diogo Guedes blog
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Diogo Guedes
+  description: "Welcome! My name is **Diogo Guedes** and this is my personal website. 
+  I share some of my learnings in this IT World. You expect content like CyberSec | Cloud | Programming | ML | DataScience | etc. Always learning :)"
+  keywords: [Blog, Portfolio, Data Science]
+  author: Diogo Guedes
+  # author: ["Me", "You"] # multiple authors
+  #images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Diogo Guedes"
+    icon: "images/coding.png"
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Welcome! \U0001F44B"
+    subtitle:  "Welcome! My name is **Diogo Guedes** and this is my personal website. 
+  I share some of my learnings in this IT World. You expect content like CyberSec | Cloud | Programming | ML | DataScience | etc. Always learning :)"
+    imageUrl: "images/logo.png" 
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "Logo"
+    buttons:
+      - name: Blogs
+        url: blogs
+      - name: Projects
+        url: projects
+
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/diogo-guedes11/"
+    - name: github
+      url: "https://github.com/diogobytes"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+
+  editPost:
+    URL: ""
+    Text: "" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 4
+    - identifier: blog
+      name: Blogs
+      url: /blogs/
+      weight: 1
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 2
